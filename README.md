@@ -7,6 +7,6 @@
   <p>cd status</p>
   <p>sudo pip install cfscrape</p>
   <p>sudo pip install requests</p>
-<h1>Usage:
+<h1>Usage:</h1>
 <p>python status.py</p>
   <p>[*] Target [URL]: https://google.com</p>
