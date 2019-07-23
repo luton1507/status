@@ -35,7 +35,7 @@ print """
       ./Coder by lulzk1d
       ./Github.com/lulzk1d
 """
-u = raw_input("[*] Target [URL/IP]: ")
+u = raw_input("[*] Target [URL]: ")
 #get status code normal
 r = requests.get(u)
 code = r.status_code
