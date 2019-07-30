@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#trình code bạn yếu vl lulzk1d =))
 import time
 import sys
 import os
