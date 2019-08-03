@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 # :D
 import sys,os,random,threading,urllib3
@@ -39,7 +38,7 @@ print """
         )_/        \          / 
        (@           `--------` Welcome! 
        
-	./Checking HTTP-Status Code BYPASS Cloudflare UAM
+	./Beta Checking HTTP-Status Code BYPASS Cloudflare UAM
 	./Author: lulzkid
 	./Github.com/lulzkid
 """
@@ -51,6 +50,30 @@ if s2.get(u).status_code == 200:
     print "[!] HTTP " + str(code3) + " [OK]"
 elif s2.get(u).status_code == 404:
     print "[!] HTTP " + str(code3) + " [Not Found]"
+elif s2.get(u).status_code == 403:
+    print "[!] HTTP " + str(code3) + " [Forbidden]"
+elif s2.get(u).status_code == 500:
+    print "[!] HTTP " + str(code3) + " [Internal Server Error]"
+elif s2.get(u).status_code == 502:
+    print "[!] HTTP " + str(code3) + " [Bad Gateway]"
+elif s2.get(u).status_code == 503:
+    print "[!] HTTP " + str(code3) + " [Service Unavailable]"
+elif s2.get(u).status_code == 504:
+    print "[!] HTTP " + str(code3) + " [Gateway Timeout]"
+elif s2.get(u).status_code == 520:
+    print "[!] HTTP " + str(code3) + " [Unknown Error]"
+elif s2.get(u).status_code == 521:
+    print "[!] HTTP " + str(code3) + " [Web Server is Down]"
+elif s2.get(u).status_code == 522:
+    print "[!] HTTP " + str(code3) + " [Connected Time out]"
+elif s2.get(u).status_code == 523:
+    print "[!] HTTP " + str(code3) + " [Origin Is Unreachable]"
+elif s2.get(u).status_code == 524:
+    print "[!] HTTP " + str(code3) + " [A Timeout Occurred]"
+elif s2.get(u).status_code == 525:
+    print "[!] HTTP " + str(code3) + " [SSL Handshake Failed]"
+elif s2.get(u).status_code == 530:
+    print "[!] HTTP " + str(code3) + " [Origin DNS Error]"
 else:
     print "[!] HTTP " + str(code3) + " [Error or Down]"
 print("================================================")
@@ -59,7 +82,7 @@ print("[*] 2. Bypass" + " (only work on cloudflare uam)")
 mode = raw_input("[*] Select Mode: ")
 print("================================================")
 if mode == '1':
-	print("- [1] Checking HTTP Status Code Normal:")
+	print("- [1] Checking Target: "+"["+u+"]"+ " HTTP Status Code Normal:")
 	while True:
             try:
                 i = random.choice(("[!]", "[@]", "[~]", "[+]", "[-]"))
@@ -73,7 +96,7 @@ if mode == '1':
                 print("[!]"+" Please Check Your Internet Connection!")
                 sys.exit(1)  
 elif mode == '2':
-    print("+ [2] Checking HTTP Status Code Bypass Cloudflare UAM:") 
+    print("+ [2] Checking Target: "+"["+u+"]"+ " HTTP Status Code Bypass Cloudflare UAM:") 
     while True:
         try:
             i = random.choice(("[!]", "[@]", "[~]", "[+]", "[-]"))
