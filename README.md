@@ -7,9 +7,8 @@
   <p>cd status</p>
   <p>sudo pip install cfscrape</p>
   <p>sudo pip install requests</p>
-  <p>Need Nodejs</p>
+  <p>apt-get install nodejs</p>
 <h1>Usage:</h1>
-<p>python status.py</p>
-  <p>[*] Target [URL]: https://google.com</p>  
-<img src="https://i.imgur.com/OIrlyVG.png"></img>  
+<p>python status.py</p> 
+<img src="https://i.imgur.com/HEUTwTV.png"></img>  
   
