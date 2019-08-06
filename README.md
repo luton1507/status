@@ -1,6 +1,6 @@
 # status
 [Simple]
-<br>./Checking HTTP-Status CODE Bypass Cloudflare UAM
+<br>./Checking HTTP-Status CODE Bypass Cloudflare/UAM and Normal
 <br>
 <h1>Install:</h1>
   <p>git clone https://github.com/lulzkid/status/</p>
