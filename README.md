@@ -11,4 +11,5 @@
 <h1>Usage:</h1>
 <p>python status.py</p> 
 <img src="https://i.imgur.com/HEUTwTV.png"></img>  
+<p>Can't Bypass Cloudflare Captcha</p>
   
